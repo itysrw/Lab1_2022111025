@@ -50,7 +50,7 @@ public class Main {
         System.out.println("6. 计算 PageRank");
         System.out.println("7. 随机游走");
         System.out.println("8. 退出");
-        System.out.print("请选择: ");
+        System.out.print("请选择你想进行的功能: ");
     }
 
     private static void buildGraphFromFile() {
