@@ -130,7 +130,8 @@ public class Main {
         }
         String path = graph.randomWalk();
         System.out.println("随机游走路径: " + path);
-        // 写入文件
+        // 写入文件,b1
+        // 写入文件,c4,b2
         try (java.io.PrintWriter out = new java.io.PrintWriter("random_walk.txt")) {
             out.println(path);
             System.out.println("路径已保存至 random_walk.txt");

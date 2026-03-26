@@ -287,7 +287,7 @@ public class Graph {
             newPR.put(v, newPR.get(v) + d * sinkSum);
         }
 
-        // 5. 检查收敛
+        // 5. 检查收敛,b2
         converged = true;
         for (String v : vertices) {
             if (Math.abs(newPR.get(v) - pr.get(v)) > epsilon) {
