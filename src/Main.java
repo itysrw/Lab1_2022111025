@@ -125,18 +125,19 @@ public class Main {
 
     private static void randomWalk() {
         if (graph == null) {
-            System.out.println("尚未构建图，请先构建。");
+            System.out.println("请先构建图！");
             return;
         }
         String path = graph.randomWalk();
         System.out.println("随机游走路径: " + path);
-        // 写入文件,b1
-        // 写入文件,c4,b2
+        System.out.println("停止原因: " + graph.getStopReason());
+        // 写入文件
         try (java.io.PrintWriter out = new java.io.PrintWriter("random_walk.txt")) {
             out.println(path);
-            System.out.println("路径已保存至 random_walk.txt");
+            out.println("停止原因: " + graph.getStopReason());
+            System.out.println("路径已保存到 random_walk.txt");
         } catch (IOException e) {
-            System.out.println("保存文件失败: " + e.getMessage());
+            System.out.println("保存文件失败：" + e.getMessage());
         }
     }
 }
