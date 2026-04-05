@@ -307,7 +307,7 @@ public class Graph {
         return pr.get(word);
     }
 
-    // 功能7：随机游走（记录停止原因）
+    // 功能7：随机游走（记录停止原因）,222
     public String randomWalk() {
         if (vertices.isEmpty()) {
             stopReason = "图为空，无法进行随机游走。";
