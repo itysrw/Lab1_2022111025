@@ -131,7 +131,7 @@ public class Main {
         String path = graph.randomWalk();
         System.out.println("随机游走路径: " + path);
         System.out.println("停止原因: " + graph.getStopReason());
-        // 写入文件
+        // 写入文件,111
         try (java.io.PrintWriter out = new java.io.PrintWriter("random_walk.txt")) {
             out.println(path);
             out.println("停止原因: " + graph.getStopReason());
