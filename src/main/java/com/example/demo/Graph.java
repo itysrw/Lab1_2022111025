@@ -108,7 +108,7 @@ public class Graph {
             }
             out.println("}");
         }
-        // 调用Graphviz生成图片（需安装Graphviz并配置环境变量）
+        // 调用Graphviz生成图片
         Runtime.getRuntime().exec("dot -Tpng " + filename + " -o " + filename + ".png");
     }
 
